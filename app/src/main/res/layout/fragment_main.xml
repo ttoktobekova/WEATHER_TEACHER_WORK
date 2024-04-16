@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_sky"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fragment.MainFragment">
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="@string/city"
+        android:textColorHint="#FCFFFFFF"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/request"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/yellow"
+        android:text="@string/city"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/detail"
+        android:textSize="32sp" />
+
+</LinearLayout>
