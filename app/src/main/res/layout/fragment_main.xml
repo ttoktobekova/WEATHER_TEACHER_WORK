@@ -5,36 +5,54 @@
     android:layout_height="match_parent"
     android:background="@drawable/img_sky"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="10dp"
     tools:context=".fragment.MainFragment">
 
     <EditText
+
         android:id="@+id/et_city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:hint="@string/city"
-        android:textColorHint="#FCFFFFFF"
-        android:textSize="40sp" />
+        android:background="@color/white"
+        android:hint="@string/entter_nameCity"
+        android:padding="24dp"
+        android:textColorHint="#88008EFF"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btn_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/blue"
-        android:text="@string/request"
+        android:text="@string/request_city"
         android:textSize="32sp" />
 
-    <TextView
-        android:id="@+id/tv_city"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@color/yellow"
-        android:text="@string/city"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="60sp" />
+        <TextView
+            android:id="@+id/tv_city_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/yellow"
+            android:text="@string/name_city"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/blue"
+            android:text="@string/city"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
 
     <Button
         android:id="@+id/btn_detail"
@@ -42,7 +60,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/blue"
-        android:text="@string/detail"
-        android:textSize="32sp" />
+        android:text="@string/more_detaild"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/to_anim"
+        android:textSize="24sp" />
 
 </LinearLayout>

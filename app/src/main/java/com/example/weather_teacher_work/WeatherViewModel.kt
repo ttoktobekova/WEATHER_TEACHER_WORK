@@ -9,7 +9,6 @@ import javax.inject.Inject
 class WeatherViewModel @Inject constructor(private val repository: Repository) : ViewModel() {
      val weatherMutableLiveData = MutableLiveData<WeatherModel>()
 
-
     fun getWeather(city: String) {
         repository.getWeather(city, weatherMutableLiveData)
     }

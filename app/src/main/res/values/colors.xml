@@ -21,4 +21,7 @@
     <color name="yellow1">#FFC107</color>
     <color name="yellow_open">#61FFC107</color>
     <color name="black_open">#94000000</color>
+    <color name="blue_transparent">#723F51B5</color>
+    <color name="blue_open">#008EFF</color>
+    <color name="white_opens">#ADFFFFFF</color>
 </resources>

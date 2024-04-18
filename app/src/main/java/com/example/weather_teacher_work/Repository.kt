@@ -21,7 +21,6 @@ class Repository @Inject constructor(private val api: WeatherApi) {
             override fun onFailure(p0: Call<WeatherModel>, error: Throwable) {
                 Log.e("ololo", "onFailure : ${error.message}")
             }
-
         })
     }
 }

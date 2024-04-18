@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.weather_teacher_work.R
 import com.example.weather_teacher_work.WeatherModel
 import com.example.weather_teacher_work.WeatherViewModel
 import com.example.weather_teacher_work.databinding.FragmentMainBinding
 import dagger.hilt.android.AndroidEntryPoint
-
-
 @AndroidEntryPoint
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
@@ -39,24 +38,20 @@ class MainFragment : Fragment() {
         viewModel.weatherMutableLiveData.observe(viewLifecycleOwner) {
             binding.tvCity.text = it.name
             weatherModel = it
-
-
         }
     }
-
     fun initClickers() {
         (binding).apply {
             btnRequest.setOnClickListener {
                 viewModel.getWeather(etCity.text.toString())
             }
             btnDetail.setOnClickListener {
-
-                val action =
-                    MainFragmentDirections.actionMainFragmentToResultFragment( weatherModel.toString())
+                val action = MainFragmentDirections.actionMainFragmentToResultFragment(weatherModel)
                 findNavController().navigate(action)
             }
-
+            btnAnim.setOnClickListener {
+                findNavController().navigate(R.id.animationFragment)
+            }
         }
     }
-
 }

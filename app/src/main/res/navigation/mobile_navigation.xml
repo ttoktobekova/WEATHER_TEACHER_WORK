@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/animationFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -22,12 +22,17 @@
         android:name="com.example.weather_teacher_work.fragment.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result">
-
+<!--        <argument-->
+<!--            android:name="weather"-->
+<!--            app:argType="string" />-->
 
         <argument
-            android:name="argument"
-            app:argType="string" />
-
-
+            android:name="argumentModel"
+            app:argType="com.example.weather_teacher_work.WeatherModel" />
     </fragment>
+    <fragment
+        android:id="@+id/animationFragment"
+        android:name="com.example.weather_teacher_work.animation.AnimationFragment"
+        android:label="fragment_animation"
+        tools:layout="@layout/fragment_animation" />
 </navigation>
